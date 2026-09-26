@@ -1,0 +1,55 @@
+# Luraph v15 Obfuscation Options
+
+[VM_OPTIONS]
+vm_type = stack | register
+vm_modes = 1-4
+vm_handlers = dynamic
+
+[CONSTANT_PROTECTION]
+constant_encryption = true
+constant_rounds = 1-10
+lazy_constants = true
+large_constants = buffer
+
+[STRING_ENCRYPTION]
+encstr = true
+string_decoder = closure
+string_xor = true
+string_buffer = true
+
+[FUNCTION_ENCRYPTION]
+encfunc = true
+function_loader = runtime
+function_buffer = true
+
+[ANTI_TAMPER]
+crash_on_hook = true
+proto_scramble = true
+anti_debug = true
+anti_vm = true
+
+[JIT_COMPILATION]
+jit_functions = true
+jit_states = true
+jit_inlining = true
+
+[NUMERIC_ENCODING]
+encnum = true
+bit32_ops = true
+float_encoding = IEEE64
+
+[CONTROL_FLOW]
+jump_table = true
+opaque_predicates = true
+false_branches = true
+merged_loops = true
+
+[UPVALUE_HANDLING]
+upvalue_boxes = true
+box_closure = true
+open_boxes = true
+
+[DEBUG_INFO]
+strip_debug = true
+strip_names = true
+keep_structure = true

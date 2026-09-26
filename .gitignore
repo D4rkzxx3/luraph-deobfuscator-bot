@@ -1,0 +1,26 @@
+.env
+.env.local
+*.pyc
+__pycache__/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+logs/
+*.log
+
+# Output files
+output/
+*.deobf.luau
+*.devirt.luau
+*.protos.json
+*.chunk_*.luau
+*.strings.txt
+
+# Dependencies
+node_modules/
+venv/

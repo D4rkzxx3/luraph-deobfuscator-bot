@@ -1,0 +1,46 @@
+{
+  "bot": {
+    "name": "Luraph Deobfuscator",
+    "version": "1.0.0",
+    "prefix": "/",
+    "color": "#00FF00"
+  },
+  "deobfuscation": {
+    "max_file_size": 102400,
+    "default_max_runs": 1000,
+    "default_devirt_rounds": 5,
+    "timeout_seconds": 300,
+    "enable_debug_files": true
+  },
+  "luraph_v15": {
+    "header_signature": "Luraph Obfuscator v15",
+    "vm_shape_signature": "return setmetatable({[n]=bit32.x",
+    "supported_features": [
+      "devirtualization",
+      "constant_decoding",
+      "string_decryption",
+      "function_extraction",
+      "control_flow_recovery",
+      "upvalue_analysis",
+      "jit_support"
+    ]
+  },
+  "output": {
+    "formats": {
+      "deobf": ".deobf.luau",
+      "devirt": ".devirt.luau",
+      "protos": ".protos.json",
+      "strings": ".strings.txt",
+      "chunks": ".chunk_*.luau"
+    },
+    "keep_intermediate": true,
+    "compress_output": false
+  },
+  "discord": {
+    "embed_color_success": 65280,
+    "embed_color_error": 16711680,
+    "embed_color_info": 255,
+    "max_embed_fields": 25,
+    "max_file_upload_mb": 8
+  }
+}
